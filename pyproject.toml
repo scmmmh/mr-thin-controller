@@ -29,12 +29,12 @@ dependencies = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/unknown/mqtt-house#readme"
-Issues = "https://github.com/unknown/mqtt-house/issues"
-Source = "https://github.com/unknown/mqtt-house"
+Documentation = "https://github.com/unknown/mr-thin-controller#readme"
+Issues = "https://github.com/unknown/mr-thin-controller/issues"
+Source = "https://github.com/unknown/mr-thin-controller"
 
 [project.scripts]
-mqtt-house = "mqtt_house.cli:app"
+mr-thin-controller = "mqtt_house.cli:app"
 
 [tool.hatch.version]
 path = "mqtt_house/__about__.py"
@@ -43,7 +43,7 @@ path = "mqtt_house/__about__.py"
 extra-dependencies = ["coverage[toml]>=6.5", "pytest", "ruff>=0.12.12"]
 
 [tool.hatch.envs.default.scripts]
-mqtt-house = "python -m mqtt_house {args}"
+mr-thin-controller = "python -m mqtt_house {args}"
 test = "pytest {args:tests}"
 test-cov = "coverage run -m pytest {args:tests}"
 cov-report = ["- coverage combine", "coverage report"]
